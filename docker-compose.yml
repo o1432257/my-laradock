@@ -665,7 +665,6 @@ services:
 
 ### MySQL ################################################
     mysql:
-      platform: linux/amd64
       build:
         context: ./mysql
         args:
@@ -677,7 +676,8 @@ services:
         - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
         - TZ=${WORKSPACE_TIMEZONE}
       volumes:
-        - ${DATA_PATH_HOST}/mysql:/var/lib/mysql
+        # without DATA_SAVE_PATH
+#        - ${DATA_PATH_HOST}/mysql:/var/lib/mysql
         - ${MYSQL_ENTRYPOINT_INITDB}:/docker-entrypoint-initdb.d
       ports:
         - "${MYSQL_PORT}:3306"
