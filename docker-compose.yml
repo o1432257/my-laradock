@@ -548,31 +548,35 @@ services:
         frontend:
           aliases:
             - laravel-ent-gameapi.api.test
-            - laravel-ent-gameapi.web.test
-            - laravel-ent-gameapi.agent.test
-            - laravel-ent-gameapi.admin.test
+            - laravel-ent-gameapi.ctrl.test
             - laravel-ent-plat.api.test
             - laravel-ent-plat.web.test
+            - laravel-ent-plat.agent.test
+            - laravel-ent-plat.admin.test
             - game-api.api.test
             - game-api.web.test
             - game-api.agent.test
             - game-api.admin.test
             - member-backend.api.test
             - member-backend.web.test
+            - member-backend.agent.test
+            - member-backend.admin.test
         backend:
           aliases:
             - laravel-ent-gameapi.api.test
-            - laravel-ent-gameapi.web.test
-            - laravel-ent-gameapi.agent.test
-            - laravel-ent-gameapi.admin.test
+            - laravel-ent-gameapi.ctrl.test
             - laravel-ent-plat.api.test
             - laravel-ent-plat.web.test
+            - laravel-ent-plat.agent.test
+            - laravel-ent-plat.admin.test
             - game-api.api.test
             - game-api.web.test
             - game-api.agent.test
             - game-api.admin.test
             - member-backend.api.test
             - member-backend.web.test
+            - member-backend.agent.test
+            - member-backend.admin.test
 ### OpenResty Server #########################################
     openresty:
       build:
